@@ -1,4 +1,4 @@
-/* @import url('https:fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap'); */
+@import url('https:fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
 
 :root {
   --primary: #e3b55a;
@@ -12,49 +12,55 @@
   --light-grey: #b8b7b7;
   --grey-highlight: #dad9d9;
 }
-.my-header{
+
+body{
+  background-color: var(--accent);
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.my-header {
   width: 100%;
   height: 15vh;
   background-color: var(--primary);
-  
+  scroll-behavior: smooth;
 }
-.my-main{
-  margin:  auto 10%;
+.my-main {
+  margin: auto 10%;
   height: 80vh;
   background-color: var(--success);
 }
-.my-footer{
+.my-footer {
   width: 100%;
   height: 7vh;
   background-color: var(--error);
 }
-.my-image{
-width: 250px;
-height: 250px;
-border-radius: 15px;
-border: solid;
-border-color: #2196f3;
-
-
+.my-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: solid;
+  border-color: #2196f3;
 }
-.my-image:hover{
-width: 250px;
-height: 250px;
-border-radius: 15px;
-border: solid 2px;
-border-color: #2196f3;
-
-
-}
-.logo{
+.my-image:hover {
+  width: 250px;
+  height: 250px;
   border-radius: 15px;
-
+  border: solid 2px;
+  border-color: #2196f3;
 }
-.title{
-display: block;
-font-size :32px;
-font-weight: 700;
-margin-block-end :21.44px;
+.logo {
+  border-radius: 15px;
+}
+.title {
+  text-align: center;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  margin-block-end: 21.44px;
 }
 .center-all {
   display: flex;
@@ -101,7 +107,7 @@ h2 {
 .reversed {
   display: flex;
   flex-direction: row-reverse;
-   /* background-color: red !important; */
+  /* background-color: red !important; */
 }
 
 .j-end {
@@ -116,152 +122,4 @@ h2 {
 
 .self-end {
   justify-self: center;
-}
-
-/* general styles */
-input[type='number'] {
-  -moz-appearance: textfield;
-}
-
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* mouse style */
-.mouse-pointer {
-  cursor: pointer;
-}
-.mouse-grabbing {
-    cursor: grabbing;
-  }
-  
-/* general classes */
-.center-all {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.center-all-col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.center-x {
-  display: flex;
-  justify-content: center;
-}
-
-.space-between {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.link {
-  &:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-}
-
-
-
-.rtl {
-  direction: rtl;
-}
-
-.golden-border {
-  border: 1px var(--primary) solid;
-  border-radius: 0.5rem;
-}
-
-#nprogress .bar {
-  background: var(--primary);
-  position: fixed;
-  z-index: 1031;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 4px;
-}
-
-.text-caption {
-  font-weight: bolder !important;
-  color: var(--secondary);
-}
-
-.w-full {
-  width: 100%;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.floating-btn {
-  position: fixed;
-  z-index: 10;
-  bottom: 20px;
-  left: 20px;
-}
-.max-w-100 {
-  max-width: 100px;
-}
-
-.flex-break {
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-  }
-}
-
-/* makes the v-data-table's footer resposive */
-@media all and (max-width: 599.9999px) {
-  .v-data-footer {
-    justify-content: center;
-    padding-bottom: 8px;
-
-    & .v-data-footer__select {
-      margin: 0 auto;
-    }
-
-    & .v-data-footer__pagination {
-      width: 100%;
-      margin: 0;
-    }
-  }
-
-  .v-application--is-ltr .v-data-footer__select .v-select {
-    margin: 5px 0 5px 13px;
-  }
-
-  .v-application--is-rtl .v-data-footer__select .v-select {
-    margin: 5px 13px 5px 0;
-  }
-}
-
-.big-checkbox {
-  .v-input--selection-controls__input .v-icon {
-    width: 50px !important;
-  }
-
-  .v-icon__svg {
-    width: 50px !important;
-    height: 50px !important;
-  }
-
-  .v-input--selection-controls__input {
-    width: 40px !important;
-  }
-}
-.v-icon.v-data-table-header__icon{
-  display: block;
-}
-.v-data-table-header th span{
-white-space: nowrap;
 }
